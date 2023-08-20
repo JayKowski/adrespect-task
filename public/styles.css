@@ -1,0 +1,19 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+body .mont-font {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body .hero-div {
+  background-image: url(./images/sect-1-photo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .firm-block {
+  background-image: url(./images/firm-sect-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
