@@ -20,7 +20,7 @@
 <body class="text-[#111]">
     <!-- N A V I G A T I O N  D I V -->
     <div class="py-[1.5rem] px-[5.5rem] max-[800px]:px-[2rem]">
-        <nav class="flex flex-row justify-between">
+        <nav class="flex flex-row justify-between items-center">
             <div>
                 <span><img src="./images/giarddesign-dark.png"/></span>
             </div>
@@ -36,8 +36,8 @@
             </div>
         </nav>
         <!-- # S M A L L  M E N U -->
-        <div class="small-menu hidden absolute top-[5rem] right-[2rem] min-[800px]:hidden">
-            <ul class="bg-[#fff] py-[1rem] px-[2rem] rounded-[.3rem] flex flex-col text-[.875rem] tracking-[-0.14px]">
+        <div class="small-menu hidden w-[50%] absolute top-[4.5rem] right-[0] min-[800px]:hidden max-[680px]:h-[100%] duration-700">
+            <ul class="bg-[#fff] py-[1rem] px-[2rem] rounded-[.3rem] flex flex-col text-[.875rem] tracking-[-0.14px] max-[680px]:h-[100%] max-[680px]:content-around">
                 <li id="show-proposal-btn" class="py-[.5rem] flex items-center">Oferta <img class="ml-[.3125rem]" src="./images/down-carret.png"></span></li>
                 <li class="py-[.5rem]"><a href="#firm-block"><span>O firmie</span></a></li>
                 <li class="py-[.5rem]"><a href="#projects-block"><span>Realizacje</span></a></li>
@@ -46,26 +46,24 @@
             </ul>
         </div>
         <!-- # S E A R C H  P O P U P  D I V -->
-        <!-- search by -->
         <div id="search-form" class="hidden fixed top-0 left-0 h-full w-full flex justify-center flex-col items-center bg-[#111]/[.8] text-[#F5F0EC]">
             <div id="close-search-menu" class="mb-[2rem]"><img class="rounded-full border-[1px] border-[#F5F0EC] p-[.5rem]" src="./images/close-icon.svg" alt="" srcset=""></div>
             <div class="p-[5rem] bg-[#1B5B31] rounded-[.5rem] max-[680px]:w-[90%] max-[680px]:p-[3rem]">
-                <h1 class="mont-font text-[3rem] italic mb-[2rem] max-[680px]:text-[2rem]">Search our projects</h1>
+                <h1 class="mont-font text-[3rem] italic mb-[2rem] max-[680px]:text-[2rem]">Przeszukaj nasze projekty</h1>
                 <form>
                     <div class="flex flex-col capitalize mb-[1.5rem]">
-                        <label class="mb-[.5rem]">search by </label>
-                        <!-- <input class="rounded-[12.5rem] py-[.5rem] px-[.5rem] bg-[#F5F0EC] text-[#111]" type="text" id="fruits" list="searchOptions" name="selectedFruit"> -->
+                        <label class="mb-[.5rem]">Szukaj według</label>
                         <select class="rounded-[12.5rem] py-[.5rem] px-[.5rem] bg-[#F5F0EC] text-[#111]" id="searchOptions">
-                            <option class="text-[#111]" value="project type">project type</option>
-                            <option class="text-[#111]" value="project duration">project duration</option>
+                            <option class="text-[#111]" value="project type">typ projektu</option>
+                            <option class="text-[#111]" value="project duration">czas trwania projektu</option>
                         </select>
                     </div>
                     <div class="flex flex-col capitalize mb-[1.5rem]">
-                        <label class="mb-[.5rem]" for="search-term">search term</label>
+                        <label class="mb-[.5rem]" for="search-term">Szukany termin</label>
                         <input class="rounded-[12.5rem] py-[.5rem] px-[.5rem] bg-[#F5F0EC] text-[#111]" type="text" name="search-term" id="">
                     </div>
                     <div class="submit-btn">
-                        <input class="text-[#1B5B31] px-[1.5rem] py-[.75rem] bg-[#F5F0EC] rounded-[12.5rem]" type="submit" value="Submit">
+                        <input class="text-[#1B5B31] px-[1.5rem] py-[.75rem] bg-[#F5F0EC] rounded-[12.5rem]" type="submit" value="Składać">
                     </div>
                 </form>
             </div>
@@ -74,28 +72,28 @@
         <div id="proposal-form" class="hidden fixed top-0 left-0 h-full w-full flex justify-center flex-col items-center bg-[#111]/[.8] text-[#F5F0EC]">
             <div id="close-proposal-form" class="mb-[2rem]"><img class="rounded-full border-[1px] border-[#F5F0EC] p-[.5rem]" src="./images/close-icon.svg" alt="" srcset=""></div>
             <div class="px-[5rem] py-[3rem] bg-[#1B5B31] rounded-[.5rem] max-[680px]:w-[90%] max-[680px]:px-[3rem] max-[680px]:py-[1rem]">
-                <h1 class="mont-font text-[3rem] italic mb-[2rem] capitalize max-[680px]:text-[2rem] max-[680px]:mb-[1rem]">propose your offer</h1>
+                <h1 class="mont-font text-[3rem] italic mb-[2rem] capitalize max-[680px]:text-[2rem] max-[680px]:mb-[1rem]">Zaproponuj swoją ofertę</h1>
                 <form>
                     <div class="flex flex-row capitalize mb-[1.5rem] max-[680px]:flex-col max-[680px]:mb-[1rem]">
                         <div class="flex flex-col pr-[2rem] max-[680px]:p-0 max-[680px]:mb-[1rem]">
-                            <label class="mb-[.5rem]" for="search-term">your name</label>
+                            <label class="mb-[.5rem]" for="search-term">Twoje imię</label>
                             <input class="rounded-[12.5rem] py-[.5rem] px-[.5rem] bg-[#F5F0EC] text-[#111]" type="text" name="search-term" id="">
                         </div>
                         <div class="flex flex-col">
-                            <label class="mb-[.5rem]" for="search-term">your number</label>
+                            <label class="mb-[.5rem]" for="search-term">Twój numer</label>
                             <input class="rounded-[12.5rem] py-[.5rem] px-[.5rem] bg-[#F5F0EC] text-[#111]" type="text" name="search-term" id="">
                         </div>
                     </div>
                     <div class="flex flex-col capitalize mb-[1.5rem] max-[680px]:mb-[1rem]">
-                        <label class="mb-[.5rem]" for="search-term">your email</label>
+                        <label class="mb-[.5rem]" for="search-term">Twój email</label>
                         <input class="rounded-[12.5rem] py-[.5rem] px-[.5rem] bg-[#F5F0EC] text-[#111]" type="text" name="search-term" id="">
                     </div>
                     <div class="flex flex-col capitalize mb-[1.5rem]">
-                        <label class="mb-[.5rem]" for="search-term">your proposal</label>
+                        <label class="mb-[.5rem]" for="search-term">Twoja propozycja</label>
                         <textarea class="rounded-[12.5rem] py-[.5rem] px-[.5rem] bg-[#F5F0EC] text-[#111]" rows="1" type="text" name="search-term" id=""></textarea>
                     </div>
                     <div class="submit-btn">
-                        <input class="text-[#1B5B31] px-[1.5rem] py-[.75rem] bg-[#F5F0EC] rounded-[12.5rem]" type="submit" value="Submit">
+                        <input class="text-[#1B5B31] px-[1.5rem] py-[.75rem] bg-[#F5F0EC] rounded-[12.5rem]" type="submit" value="Składać">
                     </div>
                 </form>
             </div>
@@ -103,11 +101,11 @@
     </div>
     <main>
         <!-- H E R O  B L O C K -->
-        <div class="flex flex-row justify-between ">
-            <div class="w-[52.2%] pl-[5.5rem] py-[9.03rem] pr-[4rem] bg-[#DCC1AB] max-[1110px]:w-[60%] max-[1110px]:px-[2rem] max-[680px]:w-[80%] max-[680px]:py-[4.065rem]">
+        <div class="flex flex-row justify-between max-[680px]:flex-col ">
+            <div class="w-[52.2%] pl-[5.5rem] py-[9.03rem] pr-[4rem] bg-[#DCC1AB] max-[1110px]:w-[60%] max-[1110px]:px-[2rem] max-[680px]:w-[100%] max-[680px]:py-[4.065rem]">
                 <div>
                     <div>
-                        <h1 class="text-[3.75rem] font-medium leading-[4.375rem] mb-[2.75rem] mont-font max-[940px]:leading-normal max-[680px]:break-words max-[680px]:leading-normal max-[680px]:tracking-[-1.44px] max-[680px]:text-[2.8rem]">Nowoczesna aranżacja Twojego ogrodu </h1> <!-- max-[940px]:text-[2.8rem] -->
+                        <h1 class="text-[3.75rem] font-medium leading-[4.375rem] mb-[2.75rem] mont-font max-[940px]:leading-normal max-[680px]:break-words max-[680px]:leading-normal max-[680px]:tracking-[-1.44px] max-[680px]:text-[2.8rem]">Nowoczesna aranżacja Twojego ogrodu </h1>
                     </div>
                     <div class="mb-[4.5rem]">
                         <p class="w-[30.56rem] max-[1110px]:w-[95%]">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
@@ -115,21 +113,18 @@
                     <div>
                         <div>
                             <button class="bg-[#1B5B31] text-[#F5F0EC] px-[1.5rem] py-[.875rem] mr-[2.25rem] rounded-[12.5rem] max-[1280px]:mb-[1rem]">Skontaktuj się z nami</button>
-                            <button class="text-[#1B5B31] px-[1.5rem] py-[.875rem] rounded-[12.5rem] border-[1px] border-[#1B5B31]">Zobacz nasze realizacje <img class="inline ml-[.5rem] animate-bounce" src="./images/arrow-down.png"/></button>
+                            <button class="text-[#1B5B31] px-[1.5rem] py-[.875rem] rounded-[12.5rem] border-[1px] border-[#1B5B31]"><a href="#projects-block">Zobacz nasze realizacje <img class="inline ml-[.5rem] animate-bounce" src="./images/arrow-down.png"/></a></button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="w-[47.8%] hero-div flex justify-end items-end duration-700 max-[1110px]:w-[40%] max-[680px]:w-[20%] max-[680px]:hidden">
+            <div class="w-[47.8%] hero-div flex justify-end items-end duration-700 max-[1110px]:w-[40%] max-[680px]:w-[100%] max-[680px]:min-h-[42rem]">
                 <div class="">
                     <div class="hero-block-btns flex justify-between top-0 right-0 py-[1.5rem] px-[2rem] bg-[#F5F0EC]">
                         <button class="hero-btn-left w-[3rem] h-[3rem]"><img class="hero-btn-left" src="./images/arrow-left.svg" alt=""></button>
                         <button class="hero-btn-right flex justify-end items-center w-[3rem] h-[3rem]"><img class="hero-btn-right" src="./images/arrow-right.svg" alt=""></button>
                     </div>
                 </div>
-            </div>
-            <div class="hero-div max-[680px]:w-[20%] duration-700">
-                <!-- FROM HERE, IMAGES SELF_SCROLL USING JS -->
             </div>
         </div>
         <!-- O F F E R  B L O C K -->
@@ -217,11 +212,11 @@
             </div>
         </div>
         <!-- F I R M  B L O C K -->
-        <div id="firm-block" class="flex flex-row relative">
-            <div class="w-1/2 firm-block max-[680px]:w-[20%]  sticky top-0">
-                <!-- <img src="./images/firm-sect-img.png" alt=""> -->
+        <div id="firm-block" class="flex flex-row relative max-[680px]:flex-col-reverse">
+            <div class="w-1/2 firm-block max-[680px]:w-[100%] max-[680px]:min-h-[42rem]">
+                
             </div>
-            <div class="w-1/2 bg-[#1B5B31] text-[#F5F0EC] max-[680px]:w-[80%]">
+            <div class="w-1/2 bg-[#1B5B31] text-[#F5F0EC] max-[680px]:w-[100%]">
                 <div class="py-[8.4375rem] pl-[6rem] max-[680px]:px-[2rem] max-[680px]:py-[3rem]">
                     <div>
                         <div class="text-[.75rem] pb-[1rem] tracking-[-0.12px]">
@@ -235,39 +230,11 @@
                         </div>
                     </div>
                     <div>
-                        <button class="px-[1.375rem] pt-[.75rem] pb-[.875rem] rounded-[12.5rem] border-[1px]">Poznaj nas bliżej<img class="inline ml-[.5rem]" src="./images/arrow-right-light.png"></button>
+                        <button class="px-[1.375rem] pt-[.75rem] pb-[.875rem] rounded-[12.5rem] border-[1px]"> <a href="#kontakt-block">Poznaj nas bliżej<img class="inline ml-[.5rem]" src="./images/arrow-right-light.png"></a></button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- G A L L E R Y  V I E W E R -->
-        <!-- <div class="absolute top-0 left-0 h-[100%] w-[100%] bg-[#111111]/[.8] py-[5rem] px-[10rem]">
-            <div class="flex flex-col">
-                <div class="flex flex-row main-gallery-slide">
-                    <div id="gallery-main-prev">
-                        <img class="rotate-180" src="./images/arrow-right-light.png">
-                    </div>
-                    <div class="gallery-img-main">
-                        <img class="max-w-[30rem] max-h-[30rem]" src="" alt="">
-                    </div>
-                    <div id="gallery-main-next">
-                        <img src="./images/arrow-right-light.png">
-                    </div>
-                </div>
-                <div class="flex flex-col">
-                    <div class="flex flex-row">
-                        <div><img class="rotate-180" src="./images/arrow-right-light.png"></div>
-                        <div>
-                            <div><img src="" alt=""></div>
-                        </div>
-                        <div><img src="./images/arrow-right-light.png"></div>
-                    </div>
-                    <div>
-                        discs legend
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <!-- P R O J E C T S  B L O C K -->
         <div id="projects-block" class="pt-[7.5rem] pb-[5.593rem] bg-[#DCC1AB] max-[680px]:pt-[3.75rem] max-[680px]:pb-[2.745rem] animated">
             <div class="layout-separator relative">
@@ -307,18 +274,15 @@
                                         <img class="p-[.8rem] rounded-[50%] border-[#fff] border-[1px]" src="./images/arrow-right-light.png">
                                     </div>
                                 </div>
-                                <img class="max-w-[30rem] max-h-[30rem] rounded-[.25rem] max-[680px]:h-[20rem] max-[680px]:mb-[1rem] max-[680px]:w-[100%] max-[680px]:inline" src="" alt="">
+                                <img class="max-w-[30rem] max-h-[25rem] rounded-[.25rem] duration-700 max-[680px]:h-[20rem] max-[680px]:mb-[1rem] max-[680px]:w-[100%] max-[680px]:inline" src="" alt="">
                             </div>
                             <div class="ml-[1.5rem] max-[680px]:hidden" id="gallery-main-next">
                                 <img class="p-[.8rem] rounded-[50%] border-[#fff] border-[1px]" src="./images/arrow-right-light.png">
                             </div>
                         </div>
-                        <div>
-                            <p></p>
-                        </div>
                         <div class="flex flex-col thumbs-sect">
-                            <div class="flex justify-center flex-row thumbs-div flex items-center">
-                                <div class="gallery-thumbs flex mx-[.5rem] max-[680px]:w-[100%] max-[680px]:flex-wrap">
+                            <div class="flex justify-center flex-row flex-wrap thumbs-div flex items-center">
+                                <div class="gallery-thumbs flex flex-wrap justify-center mx-[.5rem] max-[680px]:w-[100%] max-[680px]:flex-wrap">
                                     <!-- T H U M B S  W I L L  B E  P A S T E D  U S I N G  J S -->
                                 </div>
                             </div>
@@ -340,7 +304,7 @@
                         <div class="mb-[1.5rem] tracking-[-0.16px]">
                             <span>Śledź nasze<br /> najnowsze realizacje!</span>
                         </div>
-                        <button class="text-[#1B5B31] px-[1.5rem] py-[.75rem] bg-[#F5F0EC] rounded-[12.5rem]">Instagram</button>
+                        <button class="text-[#1B5B31] px-[1.5rem] py-[.75rem] bg-[#F5F0EC] rounded-[12.5rem]"> <a href="https://www.instagram.com/adrespect/" target="_blank">Instagram</a></button>
                     </div>
                 </div>
             </div>
@@ -363,9 +327,9 @@
                 <div class="max-[680px]:pb-[2rem]">
                     <ul class="flex flex-row justify-between text-[.875rem]">
                         <li class="pr-[3rem] max-[680px]:p-[0]">Kontakt</li>
-                        <li class="pr-[3rem] max-[680px]:p-[0]">Instagram</li>
-                        <li class="pr-[3rem] max-[680px]:p-[0]">Facebook</li>
-                        <li>LinkedIn</li>
+                        <li class="pr-[3rem] max-[680px]:p-[0]"><a href="https://www.instagram.com/adrespect/" target="_blank">Instagram</a></li>
+                        <li class="pr-[3rem] max-[680px]:p-[0]"> <a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                        <li> <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></li>
                     </ul>
                 </div>
                 <div>
@@ -394,6 +358,5 @@
     <script src="./js/showNavMenu.js"></script>
     <script src="./js/toggleSearchMenu.js"></script>
     <script src="./js/toggleProposalForm.js"></script>
-    <!-- <script src="./bundle.js"></script> -->
 </body>
 </html>
