@@ -10,6 +10,19 @@ body .mont-font {
   font-family: 'Montserrat', sans-serif;
 }
 
+body #splash-screen {
+  background-image: url('https://images.unsplash.com/photo-1446071103084-c257b5f70672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0OTEzNjd8MHwxfHNlYXJjaHwxMHx8Z2FyZGVuX2Rlc2lnbnxlbnwwfHx8fDE2OTI3MTIwMTR8MA&ixlib=rb-4.0.3&q=80&w=1080');
+  animation: animateSplash 5s ease-out;
+}
+
+div#navigation-div, main {
+  animation: fadeElements 5s ease-out;
+}
+
+div.giard-splash-logo {
+  animation: animateGiardLogo 5s ease-out;
+}
+
 body .hero-div {
   background-image: url(../images/sect-1-photo.jpg);
   background-repeat: no-repeat;
@@ -54,5 +67,90 @@ body .project-image-div {
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@keyframes animateSplash {
+  0% {
+    opacity: 90%;
+    scale: 1.4
+  }
+
+  20% {
+    opacity: 85%;
+    scale: 1.2
+  }
+
+  40% {
+    opacity: 80%;
+    scale: 1.4
+  }
+
+  60% {
+    opacity: 60%;
+    scale: 1.2
+  }
+
+  80% {
+    opacity: 20%;
+    scale: 1.4
+  }
+
+  100% {
+    opacity: 0%;
+    scale: 1
+  }
+
+}
+
+@keyframes animateGiardLogo {
+  0% {
+    scale: 1.4
+  }
+
+  20% {
+    scale: 1.2
+  }
+
+  40% {
+    scale: 1.4
+  }
+
+  60% {
+    scale: 1.2
+  }
+
+  80% {
+    scale: 1.4
+  }
+
+  100% {
+    scale: 1
+  }
+}
+
+@keyframes fadeElements {
+  0% {
+    opacity: 0%
+  }
+
+  20% {
+    opacity: 20%
+  }
+
+  40% {
+    opacity: 25%
+  }
+
+  60% {
+    opacity: 40%
+  }
+
+  80% {
+    opacity: 70%
+  }
+
+  100% {
+    opacity: 100%
   }
 }
