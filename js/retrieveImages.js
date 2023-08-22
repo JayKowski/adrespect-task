@@ -1,6 +1,3 @@
-const AccKey = 'iizoHctDv8iZm_oJVZ3h1P3P6VkAx4WhEiPkQKg4TFQ'
-const queryString = `https://api.unsplash.com/search/photos/?client_id=${AccKey}&query=garden_design&per_page=20`;
-
 // C R E A T E  N E W  E L E M E N T S
 const Element = function(element, className, attributes) {
     this.element = document.createElement(element)
@@ -140,7 +137,7 @@ const images = [
 
 const appendImages = (imageInfo, parentElement) => {
     // C R E A T E  I M G  E L E M E N T S
-    const imageContainers = imageInfo.map(i => new Element('div', 'grid-image inline max-w-[25%] max-w-[35%]')); // max-w-[25%] max-w-[35%]
+    const imageContainers = imageInfo.map(i => new Element('div', 'grid-image inline max-w-[35%] max-[680px]:min-w-[20%]')); // max-w-[25%] max-w-[35%]
     const imageElements = imageInfo.map(img => new Element('img', 'inline max-h-[90%] max-[680px]:w-[125%]', [{name: 'src', value: img.regular}, {name: 'alt', value: img.description}])) // max-h-[90%]
 
     // C L E A R  P A R E N T  E L E M E N T
@@ -156,11 +153,12 @@ const appendImages = (imageInfo, parentElement) => {
         margin: 43,
         columns: 3,
         berakAt: {
-            680: {
+            800: {
                 margin: {
                     x: 2,
+                    y:2,
                 },
-                columns: 2,
+                columns: 3,
             }
         }
     })
@@ -171,7 +169,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const imagesArrayOne = images.slice(0, 10);
     const imagesArrayTwo = images.slice(10, 20);
 
-    console.log(imagesArrayOne.length, imagesArrayTwo.length)
     imagesData = imagesArrayOne;
 
     const galleryDiv = document.querySelector('div.gallery-div > div.images-grid');
@@ -200,5 +197,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         appended = !appended
     })
-    console.log(morePhotosBtn)
 })
