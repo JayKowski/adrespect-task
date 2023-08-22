@@ -69,5 +69,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Contact Button Listener
     const contactBtn = document.querySelector('#popup-contact-btn');
     contactBtn.addEventListener('click', () => moreInfoCard.classList.toggle('hidden'))
-    console.log(contactBtn)
 })
