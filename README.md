@@ -7,7 +7,7 @@
 - Here is the link to [adRespect](https://adrespect.pl/)
 
 # WEBSITE LINK
-- The website is deployed [here on netflix](https://giarddesignn.netlify.app/)
+- The website is deployed [here on netlify](https://giarddesignn.netlify.app/)
 
 
 
