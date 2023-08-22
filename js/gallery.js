@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // C R E A T   G A L L E R Y  T H U M B S
         const newThumbs = imageItemDivs.map((_, val) => {
-            let thumbDiv = new Element ('div', 'thumb-tile bg-[#000] w-[5rem] h-[3rem] mr-[.5rem] rounded-[.25rem] max-[680px]:mt-[.5rem] max-[680px]:w-[3rem] max-[680px]:h-[2rem]')
+            let thumbDiv = new Element ('div', 'thumb-tile bg-[#000] w-[5rem] h-[3rem] mr-[.5rem] mt-[.5rem] rounded-[.25rem] max-[680px]:mt-[.5rem] max-[680px]:w-[3rem] max-[680px]:h-[2rem]')
             thumbStyles = {
                 backgroundImage: `url(${imageLinks[val]})`,
                 backgroundRepeat: 'no-repeat',
