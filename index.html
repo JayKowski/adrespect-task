@@ -18,8 +18,13 @@
     <!--  -->
 </head>
 <body class="text-[#111]">
+    <div id="splash-screen" class="fixed top-0 left-0 w-full h-full flex justify-center items-center">
+        <div class="giard-splash-logo flex justify-center items-center  h-[12rem] w-[12rem] bg-[#111]/[.9] rounded-[50%]">
+            <img class="" src="./images/giarddesign-light.png" alt="" srcset="">
+        </div>
+    </div>
     <!-- N A V I G A T I O N  D I V -->
-    <div class="py-[1.5rem] px-[5.5rem] max-[800px]:px-[2rem]">
+    <div id="navigation-div" class="py-[1.5rem] px-[5.5rem] max-[800px]:px-[2rem]">
         <nav class="flex flex-row justify-between items-center">
             <div>
                 <span><img src="./images/giarddesign-dark.png"/></span>
@@ -31,12 +36,12 @@
                 <li class="pr-[3rem]"><a href="#kontakt-block"><span>Kontakt</span></a></li>
                 <li id="search-btn"><img src="./images/search-icon.png" alt=""></li>
             </ul>
-            <div class="hidden menu-icon-div max-[800px]:inline animated">
+            <div class="hidden menu-icon-div max-[800px]:inline animated z-[10]">
                 <span><img class="animated" width=27 height=24 src="./images/menu-icon.svg" alt="" srcset=""></span>
             </div>
         </nav>
         <!-- # S M A L L  M E N U -->
-        <div class="small-menu hidden w-[50%] absolute top-[4.5rem] right-[0] min-[800px]:hidden max-[680px]:h-[100%] duration-700">
+        <div class="small-menu hidden w-[50%] bg-[#fff] fixed top-0 pt-[4.5rem] right-[0] min-[800px]:hidden max-[680px]:h-[100%] duration-700">
             <ul class="bg-[#fff] py-[1rem] px-[2rem] rounded-[.3rem] flex flex-col text-[.875rem] tracking-[-0.14px] max-[680px]:h-[100%] max-[680px]:content-around">
                 <li id="show-proposal-btn" class="py-[.5rem] flex items-center">Oferta <img class="ml-[.3125rem]" src="./images/down-carret.png"></span></li>
                 <li class="py-[.5rem]"><a href="#firm-block"><span>O firmie</span></a></li>
@@ -140,7 +145,7 @@
             </div>
             <div class="px-[5.5rem] max-[1190px]:px-[4rem] max-[680px]:px-[0]">
                 <div class="offer-block-cards flex flex-row justify-center max-[680px]:flex-col max-[680px]:justify-center max-[680px]:items-center">
-                    <div id="projekty" class="offer-card bg-[#fff] py-[3rem] px-[2.5rem] w-[23.625rem] rounded-[1.75rem] mr-[4rem] hover:scale-[1.05] duration-300 max-[1150px]:px-[2rem] max-[680px]:mr-[0] max-[680px]:w-[90%]">
+                    <div id="projekty" class="offer-card bg-[#fff] py-[3rem] px-[2.5rem] w-[23.625rem] rounded-[1.75rem] mr-[4rem] hover:scale-[1.05] duration-300 max-[1150px]:px-[2rem] max-[680px]:mr-[0] max-[680px]:w-[84%]">
                         <div class="mb-[4rem]">
                             <div class="mb-[2rem]">
                                 <img src="./images/card-pencil-icon.png" alt="">
@@ -154,7 +159,7 @@
                             <button class="text-[#1B5B31] border-b-[1px] border-[#1B5B31]"><span>Dowiedz się więcej</span><img class="inline ml-[.625rem]" src="./images/link-right.svg"/></button>
                         </div>
                     </div>
-                    <div id="wizualizacje" class="offer-card bg-[#fff] py-[3rem] px-[2.5rem] w-[23.625rem] rounded-[1.75rem] mr-[4rem] hover:scale-[1.05] duration-300 max-[1150px]:px-[2rem] max-[680px]:mt-[2rem] max-[680px]:mr-[0] max-[680px]:w-[90%]">
+                    <div id="wizualizacje" class="offer-card bg-[#fff] py-[3rem] px-[2.5rem] w-[23.625rem] rounded-[1.75rem] mr-[4rem] hover:scale-[1.05] duration-300 max-[1150px]:px-[2rem] max-[680px]:mt-[2rem] max-[680px]:mr-[0] max-[680px]:w-[84%]">
                         <div class="mb-[4rem]">
                             <div class="mb-[2rem] h-[2.5rem]">
                                 <img class="" src="./images/card-eye-icon.png" alt="">
@@ -168,7 +173,7 @@
                             <button class="text-[#1B5B31] border-b-[1px] border-[#1B5B31]"><span>Dowiedz się więcej</span><img class="inline ml-[.625rem]" src="./images/link-right.svg"/></button>
                         </div>
                     </div>
-                    <div id="realizacje" class="offer-card bg-[#fff] py-[3rem] px-[2.5rem] w-[23.625rem] rounded-[1.75rem] hover:scale-[1.05] duration-300 max-[1150px]:px-[2rem] max-[680px]:mt-[2rem] max-[680px]:w-[90%]">
+                    <div id="realizacje" class="offer-card bg-[#fff] py-[3rem] px-[2.5rem] w-[23.625rem] rounded-[1.75rem] hover:scale-[1.05] duration-300 max-[1150px]:px-[2rem] max-[680px]:mt-[2rem] max-[680px]:w-[84%]">
                         <div class="mb-[4rem]">
                             <div class="mb-[2rem]">
                                 <img src="./images/card-shine-icon.png" alt="">
@@ -358,5 +363,6 @@
     <script src="./js/showNavMenu.js"></script>
     <script src="./js/toggleSearchMenu.js"></script>
     <script src="./js/toggleProposalForm.js"></script>
+    <script src="./js/splashScreen.js"></script>
 </body>
 </html>
